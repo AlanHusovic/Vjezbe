@@ -37,7 +37,7 @@ def fibonacci(n):
     return niz[:n]
 
 print("Zbir brojeva 3 i 5:", zbir(3, 5))
-pozdrav("Marko")
+pozdrav("Alan")
 print("Broj 4 je paran?", paran(4))
 print("Faktorijel broja 5:", faktorijel(5))
 print("Prosek liste [10, 20, 30]:", prosek([10, 20, 30]))

@@ -1,0 +1,52 @@
+broj = int(input("Unesite broj: "))
+print("Broj je paran." if broj % 2 == 0 else "Broj je neparan.")
+
+# 2. Provera deljivosti sa 3 i 5
+broj = int(input("Unesite broj: "))
+if broj % 3 == 0 and broj % 5 == 0:
+    print("Broj je deljiv sa 3 i 5.")
+else:
+    print("Broj nije deljiv sa 3 i 5.")
+
+a, b, c = map(int, input("Unesite tri broja: ").split())
+print("Najveći broj je:", max(a, b, c))
+
+n = int(input("Unesite N: "))
+print("Suma prvih N brojeva je:", sum(range(1, n + 1)))
+
+broj = int(input("Unesite broj: "))
+for i in range(1, 11):
+    print(f"{broj} x {i} = {broj * i}")
+
+broj = int(input("Unesite broj: "))
+if broj > 1:
+    for i in range(2, int(broj**0.5) + 1):
+        if broj % i == 0:
+            print("Broj nije prost.")
+            break
+    else:
+        print("Broj je prost.")
+else:
+    print("Broj nije prost.")
+
+broj = input("Unesite broj: ")
+print("Broj unazad:", broj[::-1])
+
+n = int(input("Unesite broj: "))
+faktorijel = 1
+for i in range(1, n + 1):
+    faktorijel *= i
+print("Faktorijel broja je:", faktorijel)
+
+broj = input("Unesite broj: ")
+print("Broj cifara u broju je:", len(broj))
+
+suma = 0
+brojaci = 0
+while True:
+    broj = int(input("Unesite broj (0 za kraj): "))
+    if broj == 0:
+        break
+    suma += broj
+    brojaci += 1
+print("Prosek brojeva je:", suma / brojaci if brojaci != 0 else 0)

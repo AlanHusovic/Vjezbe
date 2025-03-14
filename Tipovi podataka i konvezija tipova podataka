@@ -1,0 +1,35 @@
+
+x = 10  # int
+y = 3.14  # float
+z = "Hello"  # string
+b = True  # boolean
+print(x, y, z, b)
+
+num = 42
+str_num = str(num)
+print(type(str_num))  # str
+back_to_int = int(str_num)
+print(type(back_to_int))  # int
+
+a = 5
+b = 2.5
+print(a + b, type(a + b))
+
+print(10 / 3)
+
+num_str = "8"
+print(int(num_str) * 2)
+
+a = int(input("Unesi prvi broj: "))
+b = int(input("Unesi drugi broj: "))
+print("Zbir:", a + b)
+
+print(int(True) + int(False))  # 1 + 0
+
+decimal_str = "4.75"
+print(float(decimal_str))
+
+print(ord('A'))
+
+num = 15
+print(bin(num), oct(num), hex(num))
